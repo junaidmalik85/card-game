@@ -8,6 +8,10 @@
     "start": "ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junaidmalik85/card-game.git"
+  },
   "author": "Engineer Muhammad Junaid Malik",
   "license": "MIT",
   "dependencies": {

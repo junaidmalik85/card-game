@@ -44,7 +44,7 @@ Logging is added using morgan + winston pacakges.
 
 ### **API Documentation**
 
-To get details for each avaiable API please documenetation.\
+To get details for each avaiable API please use documenetation.\
 Documentation can found on server path **/api-docs/**
 - localhost: http://localhost:3000/api-docs/
 
