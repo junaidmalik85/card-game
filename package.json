@@ -1,0 +1,44 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint src . --fix --ext .ts",
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Engineer Muhammad Junaid Malik",
+  "license": "MIT",
+  "dependencies": {
+    "@types/uuid": "^8.3.3",
+    "compression": "^1.7.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "underscore": "^1.13.1",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.11.9",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
+    "@types/underscore": "^1.11.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "typescript": "^4.5.2"
+  }
+}
