@@ -180,3 +180,71 @@ export const cardsShort = [
         "code": "KS"
     }
 ]
+
+export const firstThirteenCardsShort = [
+    {
+        "value": "ACE",
+        "suit": "CLUBS",
+        "code": "AC"
+    },
+    {
+        "value": "2",
+        "suit": "CLUBS",
+        "code": "2C"
+    },
+    {
+        "value": "7",
+        "suit": "CLUBS",
+        "code": "7C"
+    },
+    {
+        "value": "8",
+        "suit": "CLUBS",
+        "code": "8C"
+    },
+    {
+        "value": "9",
+        "suit": "CLUBS",
+        "code": "9C"
+    },
+    {
+        "value": "10",
+        "suit": "CLUBS",
+        "code": "10C"
+    },
+    {
+        "value": "JACK",
+        "suit": "CLUBS",
+        "code": "JC"
+    },
+    {
+        "value": "QUEEN",
+        "suit": "CLUBS",
+        "code": "QC"
+    },
+    {
+        "value": "KING",
+        "suit": "CLUBS",
+        "code": "KC"
+    },
+    {
+        "value": "ACE",
+        "suit": "DIAMONDS",
+        "code": "AD"
+    },
+    {
+        "value": "2",
+        "suit": "DIAMONDS",
+        "code": "2D"
+    },
+    {
+        "value": "7",
+        "suit": "DIAMONDS",
+        "code": "7D"
+    },
+    {
+        "value": "8",
+        "suit": "DIAMONDS",
+        "code": "8D"
+    }
+]

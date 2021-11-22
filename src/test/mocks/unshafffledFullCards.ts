@@ -260,3 +260,30 @@ export const cards = [
         "code": "KS"
     }
 ]
+
+export const firstFiveCards = [
+    {
+        "value": "ACE",
+        "suit": "CLUBS",
+        "code": "AC"
+    },
+    {
+        "value": "2",
+        "suit": "CLUBS",
+        "code": "2C"
+    },
+    {
+        "value": "3",
+        "suit": "CLUBS",
+        "code": "3C"
+    },
+    {
+        "value": "4",
+        "suit": "CLUBS",
+        "code": "4C"
+    },
+    {
+        "value": "5",
+        "suit": "CLUBS",
+        "code": "5C"
+    }]

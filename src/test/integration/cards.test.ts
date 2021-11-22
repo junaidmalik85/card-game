@@ -1,9 +1,9 @@
 import { expect } from 'chai'
 import request from 'supertest';
-import { cards } from '../mocks/unshafffledFullCards'
-import { cardsShort } from '../mocks/unshaffledShortCards'
+import { cards, firstFiveCards } from '../mocks/unshafffledFullCards'
+import { cardsShort, firstThirteenCardsShort } from '../mocks/unshaffledShortCards'
 
-describe("Cards APIs", () => {
+describe("Cards APIs - Integration Tests", () => {
     let server;
     let shuffledDeckId: string;
     let unshuffledDeckId: string;
@@ -141,5 +141,41 @@ describe("Cards APIs", () => {
             .set('Accept', 'application/json')
             .send({});
         expect(res.status).to.equal(400);
+    })
+
+    it('get /cards/open/:deckId - If deckId is invalid throw error.', async () => {
+        const res = await request(server)
+            .get('/cards/open/123')
+            .set('Accept', 'application/json')
+            .send({});
+        expect(res.status).to.equal(400);
+    })
+
+    it('get /cards/open/:deckId - If deckId is undefined throw error.', async () => {
+        const res = await request(server)
+            .get('/cards/open/')
+            .set('Accept', 'application/json')
+            .send({});
+        expect(res.status).to.equal(404);
+    })
+
+    it('PUT /cards/draw/:deckId/:count - Draw number of cards from a given deck (FULL unshuffled).', async () => {
+        const res = await request(server)
+            .put('/cards/draw/' + unshuffledDeckId + '/' + 5)
+            .set('Accept', 'application/json')
+            .send();
+        expect(res.status).to.equal(200);
+        expect(res.body.cards).to.deep.equal(firstFiveCards);
+        expect(res.body.cards.length).to.equal(5);
+    })
+
+    it('PUT /cards/draw/:deckId/:count - Draw number of cards from a given deck (SHORT unshuffled).', async () => {
+        const res = await request(server)
+            .put('/cards/draw/' + unshuffledShortDeckId + '/' + 13)
+            .set('Accept', 'application/json')
+            .send();
+        expect(res.status).to.equal(200);
+        expect(res.body.cards).to.deep.equal(firstThirteenCardsShort);
+        expect(res.body.cards.length).to.equal(13);
     })
 })
