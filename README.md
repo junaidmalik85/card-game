@@ -25,13 +25,13 @@ Using typescript\
 For modular code structure the logic is divided into these directories and files.
 ```
 ├───models
-│   ├───Users.js
+│   ├───cards.model.ts
 ├───routes
-│   ├───users.js
+│   ├───cards.route.ts
 ├───services
-│   ├───users.js
+│   ├───cards.service.ts
 ├───controllers
-│   ├───users.js
+│   ├───cards.controller.ts
 
 ```
 - **Models** - The schema definition of the Model
