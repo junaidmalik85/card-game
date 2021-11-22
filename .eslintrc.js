@@ -21,6 +21,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2021
   },
+  ignorePatterns: ['src/test/*'],
   rules: {
     allowEmptyReject: 0,
     'no-return-assign': 0,

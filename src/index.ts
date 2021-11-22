@@ -22,3 +22,5 @@ server.on('listening', () => {
 
 // routes
 import './routes'
+
+export default server;

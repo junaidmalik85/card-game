@@ -9,6 +9,7 @@
 - Create a **.env** file inside app root directory (check file format for details)
 - Run command **npm start** to start the server
 - Run command **npm run lint** to check/fix for linting issues
+- Run command **npm run test** for testing.
 - Logs can be found in **/logs** folder.
 
 ### **.ENV file format**
@@ -40,7 +41,9 @@ For modular code structure the logic is divided into these directories and files
 
 ### **Additional Directory Structure**
 **middlewares** - Use to add middleware functionality into the application.\
-Logging is added using morgan + winston pacakges.
+Logging is added using morgan + winston pacakges.\
+**test** - Contains all the available test. Using mocha.js, supertest and chai.\
+Current included type of test are integration tests.
 
 ### **API Documentation**
 

@@ -32,7 +32,7 @@ export class CardsService {
         this.decks.push(newDeck)
         return {
             deckId: newDeck.deckId,
-            shuffle: newDeck.shuffled,
+            shuffled: newDeck.shuffled,
             type: newDeck.type,
             remaining: newDeck.remaining
         };
